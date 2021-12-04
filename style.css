@@ -67,7 +67,7 @@ h3 {
 .allboxes div {
   width: 8.4375rem;
   height: 8.4375rem;
-  position: relative;
+  padding-top: 14px;
   color: navy;
   background-color: skyblue;
   border: 1px solid gray;
