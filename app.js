@@ -1,6 +1,5 @@
 // selectors
 var allboxes = document.querySelectorAll("div");
-var resetBtn = document.querySelector(".resetbtn");
 var playerOneScore = document.querySelector("#player1");
 var playerTwoScore = document.querySelector("#player2");
 var draw = document.querySelector(".draw");
@@ -114,13 +113,13 @@ var handleClick = function (event) {
   } else {
     event.target.classList.toggle("circle");
   }
-
+  console.log(event.target.classList);
   // Pushing up class name of clicked boxes
   getCurrentPlayer(event.target.classList[0]);
   announceWinner();
 };
 
-// function to add the clicks on tiles and allowing to be clicked only once
+// function to add the clicks on tiles.
 allboxes.forEach(function (box) {
   box.addEventListener("click", handleClick);
 });
